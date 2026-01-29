@@ -1,36 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-@font-face {
+
+/* @font-face {
   font-family: "Satoshi";
   src: url("/assets/fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 900;
+} */
+
+@font-face {
+  font-family: "Neue-Montreal";
+  src: url("/assets/fonts/NeueMontreal-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("/assets/fonts/Satoshi-Bold.otf") format("opentype");
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("/assets/fonts/Satoshi-Regular.otf") format("opentype");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("/assets/fonts/Satoshi-Medium.otf") format("opentype");
+  font-family: "Neue-Montreal";
+  src: url("/assets/fonts/NeueMontreal-Medium.otf") format("opentype");
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "Neue-Montreal";
+  src: url("/assets/fonts/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
 }
 
 
 @theme {
   /* Fonts */
-  --font-Satoshi: Satoshi, sans-serif;
+  --font-neue-montreal: "Neue-Montreal", sans-serif;
   --font-work-sans: "Work Sans", sans-serif;
-  --font-inter: Inter, sans-serif;
 
   /* Colors */
 
@@ -46,7 +46,7 @@
 
 
   /* Shadows */
-  --shadow-primary-button: 0 2px 48px 0 rgba(0, 0, 0, 0.12);
+  --shadow-navbar: 0 2px 48px 0 rgba(0, 0, 0, 0.12);
 
   /* Gradients */
   --bg-gradient-primary:linear-gradient(315deg, #2D2670 0%, #171249 100%);

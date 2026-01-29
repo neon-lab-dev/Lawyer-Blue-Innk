@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/Reusable/Container/Container";
-import { IMAGES } from "@/assets";
 import SectionHeading from "@/components/Reusable/Heading/SectionHeading";
+import { IMAGES } from "../../../../public/assets";
 
 const FounderMessage = () => {
   return (

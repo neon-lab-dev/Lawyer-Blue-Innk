@@ -1,10 +1,10 @@
 "use client";
-import {IMAGES } from "@/assets";
 import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { IMAGES } from "../../../../public/assets";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -16,58 +16,52 @@ const Navbar = () => {
     },
     {
       label: "About Us",
-      path: "/",
+      path: "/about-us",
     },
     {
       label: "Services",
-      path: "/",
+      path: "/services",
     },
     {
       label: "Our Team",
-      path: "/",
+      path: "/our-team",
     },
     {
       label: "Awards",
-      path: "/",
+      path: "/awards",
     },
     {
       label: "Contact Us",
-      path: "/",
+      path: "/contact-us",
     },
   ];
 
-
   return (
     <>
-      <div className="bg-white font-work-sans w-full z-999 ">
+      <div className="bg-white shadow-navbar font-work-sans w-full z-999 py-6">
         <Container>
-          <div className="flex items-center justify-between py-6 ">
+          <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/">
-              <Image
-                src={IMAGES.logo}
-                alt="blue ink"
-                className="h-12 w-12"
-              />
+              <Image src={IMAGES.logo} alt="blue ink" className="size-12" />
             </Link>
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-12">
-              
               {navlinks.map((item) => (
                 <Link
                   key={item.label}
                   href={item.path}
                   className={`text-sm font-medium ${
                     pathname === item.path
-                      ? "text-shadow-neutral-15"
+                      ? "text-neutral-15 font-semibold"
                       : "text-neutral-10"
                   }`}
                 >
                   {item.label}
                 </Link>
               ))}
-              <Button label="Enquire Now"/>
+              <Button label="Enquire Now" />
             </div>
 
             {/* Mobile Hamburger */}
@@ -81,8 +75,6 @@ const Navbar = () => {
           </div>
         </Container>
       </div>
-
-      
     </>
   );
 };

@@ -1,8 +1,8 @@
-import { IMAGES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { FaClock, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { IMAGES } from "../../../../public/assets";
 
 const Footer = () => {
   const footerLinks = [
