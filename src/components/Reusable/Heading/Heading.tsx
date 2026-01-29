@@ -7,9 +7,9 @@ const Heading = ({
 }) => {
   return (
     <div>
-      <h3 className="title font-neue-montreal">{heading}</h3>
+      <h3 className="title font-neue-montreal max-w-170.25">{heading}</h3>
       {description && (
-        <p className="text-lg text-neutral-15 mt-3 font-work-sans">
+        <p className="text-lg text-neutral-15 mt-3 font-work-sans max-w-170.25 leading-7">
           {description}
         </p>
       )}
