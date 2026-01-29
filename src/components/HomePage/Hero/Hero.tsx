@@ -3,7 +3,7 @@ import Container from "@/components/Reusable/Container/Container";
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-05 pt-12 pb-18">
+    <section className="bg-neutral-05 pt-12 pb-18 font-neue-montreal">
       <Container>
         <div className="max-w-2xl flex flex-col gap-6">
           <div>

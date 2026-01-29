@@ -44,6 +44,8 @@
   --color-neutral-10: #4A4A4A;
   --color-neutral-15: #0D0D0D;
   --color-neutral-20: #757575;
+  --color-neutral-25: #DEDEDE;
+  --color-neutral-30: #B0B0B0;
 
 
   /* Shadows */
@@ -53,6 +55,7 @@
   --bg-gradient-primary:linear-gradient(315deg, #2D2670 0%, #171249 100%);
   --bg-gradient-card: linear-gradient(0deg, #fff 50%, #f5f5f5 100%);
    --bg-gray-gradient:linear-gradient(213deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.48) 50%);
+   --bg-gradient-client: linear-gradient(270deg, rgba(222, 222, 222, 0.00) 0%, #DEDEDE 50%);
 }
 
 .body {
@@ -63,6 +66,10 @@
   background: var(--bg-gradient-primary);
 }
 
+.bg-gradient-client {
+  background: var(--bg-gradient-client);
+}
+
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
@@ -70,4 +77,10 @@
 .scrollbar-none {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@layer utilities {
+  .title {
+    @apply text-5xl font-medium leading-14 text-neutral-15;
+  }
 }
