@@ -1,29 +1,32 @@
+"use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { forwardRef } from "react";
 import type { FieldError, FieldErrorsImpl, Merge } from "react-hook-form";
 
-interface TextareaProps {
-  label: string;
+interface TextInputProps {
+  label?: string;
   name: string;
   placeholder?: string;
-  rows?: number;
+  type?: string;
   error?: FieldError | Merge<FieldError, FieldErrorsImpl<any>>;
   value?: string;
   onChange?: any;
-  isRequired?: boolean;
+  defaultValue?: any;
   isDisabled?: boolean;
+  isRequired?: boolean;
 }
 
-const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
+const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
   (
     {
       label,
       name,
       placeholder = "",
-      rows = 4,
+      type = "text",
       error,
-      isRequired = true,
+      defaultValue,
       isDisabled = false,
+      // isRequired = true,
       ...rest
     },
     ref,
@@ -43,19 +46,19 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
             </label>
           )}
 
-          <textarea
+          <input
             id={name}
             name={name}
+            type={type}
             placeholder={placeholder}
-            rows={rows}
+            defaultValue={defaultValue}
             ref={ref}
             disabled={isDisabled}
-            required={isRequired}
             className={`w-full px-7 py-[15px] rounded-xl border focus:outline-none focus:border-primary-10 transition duration-300 ${
               isDisabled ? "cursor-not-allowed bg-neutral-50/20" : "bg-white"
             } ${error ? "border-red-500" : "border-neutral-35"}`}
             {...rest}
-          ></textarea>
+          />
         </div>
 
         {error?.message && (
@@ -68,6 +71,6 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
   },
 );
 
-Textarea.displayName = "Textarea";
+TextInput.displayName = "TextInput";
 
-export default Textarea;
+export default TextInput;

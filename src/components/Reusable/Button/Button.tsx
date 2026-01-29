@@ -6,7 +6,7 @@ type ButtonProps = {
   label: string;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
-  className?: string;
+  classNames?: string;
   isDisabled?: boolean;
 };
 
@@ -15,25 +15,22 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type,
   isDisabled,
+  classNames,
 }) => {
   return (
     <button
       type={type}
       onClick={onClick}
-      className="rounded-full
+      className={`flex rounded-full
       py-3 px-6
       flex items-center justify-center gap-3
       transition-all duration-300 ease-in-out
       active:translate-y-px
       hover:opacity-90 hover:scale-[1.03] bg-gradient-primary
-      cursor-pointer w-fit"
+      cursor-pointer w-fit ${classNames}`}
       disabled={isDisabled}
     >
-      <p
-        className="font-medium text-neutral-05"
-      >
-        {label}
-      </p>
+      <p className="font-medium text-neutral-05">{label}</p>
       <Image src={ICONS.rightArrow} alt={label} className={`size-6`} />
     </button>
   );

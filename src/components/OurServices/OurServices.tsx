@@ -1,4 +1,5 @@
 import Container from "../Reusable/Container/Container";
+import Heading from "../Reusable/Heading/Heading";
 
 const OurServices = () => {
   const practiceAreas = [
@@ -20,24 +21,31 @@ const OurServices = () => {
 
   // Spliting items into columns
   const columnsData = Array.from({ length: columns }, (_, colIndex) =>
-    practiceAreas.filter((_, index) => index >= colIndex * rows && index < (colIndex + 1) * rows)
+    practiceAreas.filter(
+      (_, index) => index >= colIndex * rows && index < (colIndex + 1) * rows,
+    ),
   );
 
   return (
     <Container>
       <div className="font-neue-montreal pt-14 pb-19">
-        <h3 className="title">Our Services</h3>
-        <p className="text-lg text-neutral-15 mt-3">
-          Comprehensive legal services tailored to your needs.
-        </p>
+        <Heading
+          heading="Our Services"
+          description="Comprehensive legal services tailored to your needs."
+        />
 
         <div className="flex gap-3 mt-12">
           {columnsData.map((col, colIndex) => (
             <div key={colIndex} className="flex flex-col gap-3 flex-1">
               {col.map((item) => (
-                <div key={item.id} className="bg-gradient-service-card p-6 rounded-3xl">
+                <div
+                  key={item.id}
+                  className="bg-gradient-service-card p-6 rounded-3xl"
+                >
                   <h3 className="title">{item.id}</h3>
-                  <p className="text-2xl font-medium text-neutral-15 mt-3">{item.title}</p>
+                  <p className="text-2xl font-medium text-neutral-15 mt-3">
+                    {item.title}
+                  </p>
                 </div>
               ))}
             </div>

@@ -8,19 +8,23 @@ import wakefit from "../assets/images/clients/wakefit.webp";
 
 // ICons
 import rightArrow from "../assets/icons/right-arrow.svg";
-
+import phone from "../assets/icons/phone.svg";
+import email from "../assets/icons/email.svg";
+import time from "../assets/icons/time.svg";
 
 export const IMAGES = {
-heroImage,
-logo,
-founder,
-airArabia,
-haldirams,
-micromax,
-wakefit
+  heroImage,
+  logo,
+  founder,
+  airArabia,
+  haldirams,
+  micromax,
+  wakefit,
 };
 
 export const ICONS = {
-  rightArrow
+  rightArrow,
+  phone,
+  email,
+  time,
 };
-
