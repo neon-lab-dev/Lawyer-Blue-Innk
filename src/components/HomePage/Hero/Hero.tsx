@@ -1,30 +1,26 @@
+import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
 
 const Hero = () => {
   return (
-    <section className="bg-neutral-05 py-10 md:py-14">
+    <section className="bg-neutral-05 pt-12 pb-18">
       <Container>
-        <div className="p-6 md:p-12 max-w-xl text-white">
-          <h1 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
-            Trusted Legal Representation,
-            <br />
-            When It Matters Most.
-          </h1>
+        <div className="max-w-2xl flex flex-col gap-6">
+          <div>
+            <h1 className="text-5xl font-medium leading-14 text-neutral-15">
+              Trusted Legal Representation, When It Matters Most.
+            </h1>
 
-          <p className="text-sm md:text-base text-white/90 mb-6">
-            Experienced attorneys helping individuals and businesses protect
-            their rights with confidence.
-          </p>
-
-          <div className="flex items-center gap-4 flex-wrap">
-            <button className="bg-primary-10 text-white px-5 py-3 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition">
-              Get Free Consultation →
-            </button>
-
-            <span className="text-xs text-white/80">
-              Confidential • Quick Response • No obligation
-            </span>
+            <p className="text-lg text-neutral-15 mt-3">
+              Experienced attorneys helping individuals and businesses protect
+              their <br /> rights with confidence.
+            </p>
           </div>
+          <Button label="Enquire Now" />
+
+          <p className="text-sm font-medium text-neutral-20">
+            Confidential - Quick Response - No <br /> obligation
+          </p>
         </div>
       </Container>
     </section>

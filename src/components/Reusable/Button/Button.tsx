@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
       transition-all duration-300 ease-in-out
       active:translate-y-px
       hover:opacity-90 hover:scale-[1.03] bg-gradient-primary
-      cursor-pointer"
+      cursor-pointer w-fit"
       disabled={isDisabled}
     >
       <p
