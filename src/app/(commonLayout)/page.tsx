@@ -2,6 +2,7 @@ import FounderMessage from "@/components/HomePage/FoundersMessage/FoundersMessag
 import HeroSection from "@/components/HomePage/Hero/Hero";
 import OurClientele from "@/components/HomePage/OurClientele/OurClientele";
 import OurServices from "@/components/OurServices/OurServices";
+import WhyChooseBlueInkk from "@/components/Shared/WhyChooseBlueInkk/WhyChooseBlueInkk";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection/>
       <OurClientele/>
       <OurServices/>
+      <WhyChooseBlueInkk/>
       <FounderMessage/>
     </div>
   );

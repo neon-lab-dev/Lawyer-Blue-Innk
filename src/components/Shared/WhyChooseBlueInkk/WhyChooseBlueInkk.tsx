@@ -1,0 +1,91 @@
+import Container from "@/components/Reusable/Container/Container";
+
+const WhyChooseBlueInkk = () => {
+  const whyChooseUsDetails = [
+    {
+      id: "01",
+      title: "Full-Service IP Expertise",
+      description:
+        "End-to-end legal solutions across all areas of Intellectual Property and allied legal domains.",
+    },
+    {
+      id: "02",
+      title: "Trusted by 40,000+ Clients Worldwide",
+      description:
+        "Representing individuals, startups, MSMEs, and large corporates across India and international jurisdictions.",
+    },
+    {
+      id: "03",
+      title: "Proven Industry Recognition",
+      description:
+        "Consistently ranked by the Government of India among the Top 15 trademark filing law firms, and recognized as the youngest firm to achieve this distinction.",
+    },
+    {
+      id: "04",
+      title: "Client-First Legal Strategies",
+      description:
+        "Every legal strategy is carefully customized to match your unique circumstances, objectives, and priorities, ensuring focused, effective, and client-centric legal solutions.",
+    },
+    {
+      id: "05",
+      title: "High-Volume, High-Precision Filings",
+      description:
+        "One of India’s leading IP filing and prosecution firms with strong operational scale and efficiency.",
+    },
+    {
+      id: "06",
+      title: "Global Reach & Cross-Border Expertise",
+      description:
+        "Protection, enforcement, and advisory services across 100+ countries, supported by a robust international network.",
+    },
+    {
+      id: "07",
+      title: "Strategic Litigation & Enforcement",
+      description:
+        "Comprehensive handling of prosecution, litigation, and enforcement before IP offices, courts, and tribunals.",
+    },
+    {
+      id: "08",
+      title: "International Treaty Advisory",
+      description:
+        "Regularly advising on cross-border IP matters, including TRIPS and the Madrid Protocol.",
+    },
+    {
+      id: "09",
+      title: "Experienced Leadership & Skilled Team",
+      description:
+        "Managed by seasoned partners and attorneys delivering reliable, ethical, and client-focused representation.",
+    },
+  ];
+
+  return (
+    <div className="font-neue-montreal pt-14 pb-28 bg-secondary-05">
+      <Container>
+        <h2 className="title text-center">Why Choose BlueInkk</h2>
+
+        <div className="flex flex-col items-center mt-12">
+          {whyChooseUsDetails?.map((details) => (
+            <div
+              key={details.id}
+              className="py-12 px-19.5 border-t border-neutral-20 min-w-230"
+            >
+              <div className="text-neutral-15 flex items-center gap-6">
+                <h3 className="title">{details.id}</h3>
+                <div>
+                  <h4 className="text-2xl font-medium">
+                    {details.title}
+                  </h4>
+                  <p className="mt-3 text-lg leading-7 max-w-[706px]">
+                    {details.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default WhyChooseBlueInkk;
