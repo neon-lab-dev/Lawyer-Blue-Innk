@@ -1,0 +1,23 @@
+{
+  "headers": [
+    {
+      "source": "/models/(.*).usdz",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "model/vnd.usdz+zip"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/models/(.*).usdz",
+      "destination": "/models/$1.usdz"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
