@@ -75,7 +75,7 @@ const WhyChooseBlueInkk = () => {
                   <h4 className="text-2xl font-medium">
                     {details.title}
                   </h4>
-                  <p className="mt-3 text-lg leading-7 max-w-[706px]">
+                  <p className="mt-3 text-lg leading-7 max-w-176.5">
                     {details.description}
                   </p>
                 </div>

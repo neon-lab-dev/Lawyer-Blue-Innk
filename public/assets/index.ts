@@ -1,6 +1,6 @@
 import heroImage from "../assets/images/heroImage.png";
 import logo from "../assets/images/logo.png";
-import founder from "../assets/images/fouder.png";
+import founder from "../assets/images/founder.webp";
 import airArabia from "../assets/images/clients/air-arabia.webp";
 import haldirams from "../assets/images/clients/haldirams.webp";
 import micromax from "../assets/images/clients/micromax.webp";
