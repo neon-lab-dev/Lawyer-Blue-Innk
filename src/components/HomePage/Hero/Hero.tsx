@@ -11,7 +11,7 @@ const Hero = () => {
               Trusted Legal Representation, When It Matters Most.
             </h1>
 
-            <p className="text-lg text-neutral-15 mt-3">
+            <p className="text-lg text-neutral-15 font-work-sans mt-3">
               Experienced attorneys helping individuals and businesses protect
               their <br /> rights with confidence.
             </p>

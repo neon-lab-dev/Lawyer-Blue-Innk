@@ -1,4 +1,4 @@
-import Container from "@/components/Reusable/Container/Container";
+import NumberedContentSection from "@/components/Reusable/NumberedContentSection/NumberedContentSection";
 
 const WhyChooseBlueInkk = () => {
   const whyChooseUsDetails = [
@@ -59,32 +59,7 @@ const WhyChooseBlueInkk = () => {
   ];
 
   return (
-    <div className="font-neue-montreal pt-14 pb-28 bg-secondary-05">
-      <Container>
-        <h2 className="title text-center">Why Choose BlueInkk</h2>
-
-        <div className="flex flex-col items-center mt-12">
-          {whyChooseUsDetails?.map((details) => (
-            <div
-              key={details.id}
-              className="py-12 px-19.5 border-t border-neutral-20 min-w-230"
-            >
-              <div className="text-neutral-15 flex items-center gap-6">
-                <h3 className="title">{details.id}</h3>
-                <div>
-                  <h4 className="text-2xl font-medium">
-                    {details.title}
-                  </h4>
-                  <p className="mt-3 text-lg leading-7 max-w-176.5">
-                    {details.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Container>
-    </div>
+    <NumberedContentSection heading="Why Choose BlueInkk?" items={whyChooseUsDetails} />
   );
 };
 
