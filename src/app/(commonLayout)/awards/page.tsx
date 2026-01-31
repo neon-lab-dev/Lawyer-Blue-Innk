@@ -12,7 +12,7 @@ const Awards = () => {
           description="Honoured for legal excellence, consistent performance, and trusted intellectual property expertise."
         />
 
-        <div className="grid grid-cols-4 gap-12 mt-26.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-12 lg:mt-26.5">
           {[1, 2, 3, 4, 5, 6]?.map((_, index) => (
             <div
               key={index}

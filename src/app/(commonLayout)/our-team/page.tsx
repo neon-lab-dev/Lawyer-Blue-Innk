@@ -5,14 +5,14 @@ import { IMAGES } from "../../../../public/assets";
 
 const OurTeam = () => {
   return (
-    <div className="bg-neutral-05 pt-12 pb-32 font-neue-montreal">
+    <div className="bg-neutral-05 pt-12 pb-12 lg:pb-32 font-neue-montreal">
       <Container>
         <Heading
           heading="Meet Our Legal Experts"
           description="A team of experienced lawyers committed to providing clear, ethical, and client-focused legal guidance."
         />
 
-        <div className="grid grid-cols-4 gap-12 mt-26.5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-12 lg:mt-26.5">
           {[1, 2, 3, 4, 5, 6]?.map((_, index) => (
             <div key={index} className="max-w-[288px] relative">
               <Image src={IMAGES.dummyTeamMember} alt="Founder" />
