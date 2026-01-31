@@ -13,6 +13,7 @@ import rightArrow from "../assets/icons/right-arrow.svg";
 import phone from "../assets/icons/phone.svg";
 import email from "../assets/icons/email.svg";
 import time from "../assets/icons/time.svg";
+import hamburgerMenu from "../assets/icons/menu.svg";
 
 export const IMAGES = {
   heroImage,
@@ -31,4 +32,5 @@ export const ICONS = {
   phone,
   email,
   time,
+  hamburgerMenu,
 };

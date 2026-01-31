@@ -3,9 +3,11 @@ import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IMAGES } from "../../../../public/assets";
+import { ICONS, IMAGES } from "../../../../public/assets";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen , setIsMenuOpen] = useState<boolean>(false);
   const pathname = usePathname();
 
   const navlinks = [
@@ -42,11 +44,11 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/">
-              <Image src={IMAGES.logo} alt="blue ink" className="size-18" />
+              <Image src={IMAGES.logo} alt="blue ink" className="size-10 md:size-18" />
             </Link>
 
             {/* Desktop Nav */}
-            <div className="hidden lg:flex items-center gap-12">
+            <div className="hidden md:flex items-center gap-12">
               {navlinks.map((item) => (
                 <Link
                   key={item.label}
@@ -63,13 +65,13 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Hamburger */}
-            {/* <button
-              onClick={() => setIsSidebarOpen(true)}
-              className="lg:hidden flex items-center justify-center size-12 rounded-full bg-neutral-10"
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="md:hidden flex cursor-pointer"
               aria-label="Open Menu"
             >
               <Image src={ICONS.hamburgerMenu} alt="menu" className="size-6" />
-            </button>  */}
+            </button> 
           </div>
         </Container>
       </div>

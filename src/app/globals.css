@@ -88,6 +88,6 @@
 
 @layer utilities {
   .title {
-    @apply text-5xl font-medium leading-14 text-neutral-15;
+    @apply text-4xl md:text-5xl font-semibold leading-10 md:leading-14 text-neutral-15;
   }
 }

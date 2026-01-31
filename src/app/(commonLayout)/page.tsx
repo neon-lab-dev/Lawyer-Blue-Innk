@@ -9,13 +9,13 @@ import WhyChooseBlueInkk from "@/components/Shared/WhyChooseBlueInkk/WhyChooseBl
 export default function Home() {
   return (
     <div className="">
-      <HeroSection/>
-      <OurClientele/>
-      <OurServices/>
-      <WhyChooseBlueInkk/>
-      <FounderMessage/>
-      <CorePhilosophy/>
-    <ContactUs/>
+      <HeroSection />
+      {/* <OurClientele />
+      <OurServices />
+      <WhyChooseBlueInkk />
+      <FounderMessage />
+      <CorePhilosophy />
+      <ContactUs /> */}
     </div>
   );
 }

@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       type={type}
       onClick={onClick}
-      className={`flex rounded-full
+      className={`rounded-full
       py-3 px-6
       flex items-center justify-center gap-3
       transition-all duration-300 ease-in-out
