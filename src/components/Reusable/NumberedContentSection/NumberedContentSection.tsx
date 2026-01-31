@@ -3,9 +3,9 @@ import Container from '../Container/Container';
 
 const NumberedContentSection = ({heading, items} : {heading: string, items: any[]}) => {
     return (
-        <div className="font-neue-montreal pt-14 pb-28 bg-secondary-05">
+        <div className="font-neue-montreal py-14 bg-primary-05 text-white">
       <Container>
-        <h2 className="title text-center">{heading}</h2>
+        <h2 className="text-5xl font-medium leading-14 text-white text-center">{heading}</h2>
 
         <div className="flex flex-col items-center mt-12">
           {items?.map((item?) => (
@@ -13,8 +13,8 @@ const NumberedContentSection = ({heading, items} : {heading: string, items: any[
               key={item?.id}
               className="py-12 px-19.5 border-t border-neutral-20 min-w-230"
             >
-              <div className="text-neutral-15 flex items-center gap-6">
-                <h3 className="title">{item?.id}</h3>
+              <div className="text-white flex items-center gap-6">
+                <h3 className="text-5xl font-medium leading-14 text-white">{item?.id}</h3>
                 <div>
                   <h4 className="text-2xl font-medium">
                     {item?.title}

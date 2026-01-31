@@ -1,4 +1,3 @@
-import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
 
 const Hero = () => {
@@ -16,7 +15,7 @@ const Hero = () => {
               their <br /> rights with confidence.
             </p>
           </div>
-          <Button label="Enquire Now" />
+          {/* <Button label="Enquire Now" /> */}
 
           <p className="text-sm font-medium text-neutral-20">
             Confidential - Quick Response - No <br /> obligation

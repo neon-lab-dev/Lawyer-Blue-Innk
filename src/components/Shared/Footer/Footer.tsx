@@ -23,6 +23,7 @@ const Footer = () => {
         { label: "Home", path: "/" },
         { label: "About Us", path: "/" },
         { label: "Services", path: "/" },
+        { label: "Why Choose Us", path: "/why-choose-us" },
         { label: "Our Team", path: "/" },
         { label: "Awards", path: "/" },
         { label: "Practice Areas", path: "/" },
@@ -159,6 +160,10 @@ const Footer = () => {
               </div>
             ))}
           </div>
+          <hr className="border border-neutral-40 my-6" />
+          <p className="text-neutral-15 font-work-sans text-lg text-center">
+            © BlueInkk Law Firm. All rights reserved
+          </p>
         </div>
       </Container>
     </footer>

@@ -1,5 +1,4 @@
 "use client";
-import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,12 +37,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white shadow-navbar font-work-sans w-full z-999 py-6">
+      <div className="bg-white shadow-navbar font-work-sans w-full z-999 py-4">
         <Container>
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/">
-              <Image src={IMAGES.logo} alt="blue ink" className="size-12" />
+              <Image src={IMAGES.logo} alt="blue ink" className="size-18" />
             </Link>
 
             {/* Desktop Nav */}
@@ -61,7 +60,6 @@ const Navbar = () => {
                   {item.label}
                 </Link>
               ))}
-              <Button label="Enquire Now" />
             </div>
 
             {/* Mobile Hamburger */}

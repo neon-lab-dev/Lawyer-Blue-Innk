@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const OurClientele = () => {
   const stats = [
-    { title: "Clients Helped", value: 1200 },
+    { title: "Clients Helped", value: 40000 },
     { title: "Years Legal Experience", value: 15 },
-    { title: "Practice Areas", value: 20 },
+    { title: "Practice Areas", value: 100 },
   ];
 
   const clients = [

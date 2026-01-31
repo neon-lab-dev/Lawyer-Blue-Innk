@@ -1,3 +1,4 @@
+import CorePhilosophy from "@/components/HomePage/CorePhilosophy/CorePhilosophy";
 import FounderMessage from "@/components/HomePage/FoundersMessage/FoundersMessage";
 import HeroSection from "@/components/HomePage/Hero/Hero";
 import OurClientele from "@/components/HomePage/OurClientele/OurClientele";
@@ -13,6 +14,7 @@ export default function Home() {
       <OurServices/>
       <WhyChooseBlueInkk/>
       <FounderMessage/>
+      <CorePhilosophy/>
     <ContactUs/>
     </div>
   );

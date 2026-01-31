@@ -9,11 +9,11 @@ const ContactUs = () => {
   const contactInfo = [
     {
       icon: ICONS.phone,
-      href: "tel:+91 9370308788",
+      href: "tel:+91-9958000637",
     },
     {
       icon: ICONS.email,
-      href: "mailto:bluelnkk124@gmail",
+      href: "mailto:ipr@blueinkk.com",
     },
     {
       icon: ICONS.time,
@@ -23,13 +23,17 @@ const ContactUs = () => {
   return (
     <Container>
       <div className="py-14">
-        <Heading
+        
+        <div className="flex items-center justify-between">
+         <div className="w-1/2 space-y-8">
+           <Heading
           heading="Contact Us"
           description="We usually respond within 24 hours"
         />
-        <div className="flex items-center justify-between mt-8">
+        
           {/* Form */}
           <ContactUsForm />
+         </div>
 
           {/* Contact info */}
           <div className="space-y-6 w-1/3">
@@ -41,8 +45,7 @@ const ContactUs = () => {
               className="size-21"
             />
             <h3 className="text-neutral-15 text-2xl font-medium font-neue-montreal">
-              Sr no. 72/1B/63, Solitaire Business Hub, Balewadi Link Road,
-              Balewadi, Pune - 67
+              Address- G-49-50, SECOND FLOOR, OFFICE NO. 1, METRO STATION, near SECTOR 16, Block G, Noida Sector 3, Noida, Uttar Pradesh 201301
             </h3>
 
             <div className="flex flex-col gap-3">

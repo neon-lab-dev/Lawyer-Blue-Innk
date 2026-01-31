@@ -6,7 +6,7 @@ const FounderMessage = () => {
   return (
     <section className="bg-neutral-05 py-14 font-neue-montreal">
       <Container>
-        <div className="flex gap-6">
+        <div className="flex items-center gap-6">
           {/* Text Content */}
           <div className="w-1/2">
             <h3 className="title">Founder’s Message</h3>
@@ -22,17 +22,7 @@ const FounderMessage = () => {
               long-term value across jurisdictions.
             </p>
 
-            <h4 className="text-neutral-15 font-medium text-2xl mt-12">
-              Core Philosophy
-            </h4>
-            <p className="text-neutral-15 text-sm md:text-lg leading-relaxed mb-4 mt-3 font-work-sans">
-              At Blue Inkk, we view Intellectual Property as a strategic
-              business asset. Our approach is driven by excellence, expertise,
-              and efficiency. We are committed to building long-term client
-              relationships founded on trust, responsiveness, and professional
-              integrity, ensuring every client’s IP is protected with complete
-              dedication.
-            </p>
+            
           </div>
 
           {/* Image */}
