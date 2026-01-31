@@ -18,10 +18,10 @@ const OurClientele = () => {
   ];
 
   return (
-    <section className="bg-neutral-25 py-18 font-neue-montreal">
+    <section className="bg-neutral-25 py-14 md:py-18 font-neue-montreal">
       <Container>
         {/* Stats */}
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-9 md:gap-0 items-center justify-between">
           {stats.map((stat) => (
             <div
               key={stat.title}
@@ -40,8 +40,8 @@ const OurClientele = () => {
 
         {/* Marquee */}
         <div className="relative">
-          <div className="w-37 h-20 bg-gradient-client absolute left-0 z-10 mt-1"></div>
-          <div className="w-37 h-20 bg-gradient-client absolute right-0 z-10 mt-1 rotate-180"></div>
+          <div className="w-10 md:w-37 h-24 bg-gradient-client absolute left-0 z-10"></div>
+          <div className="w-10 md:w-37 h-24 bg-gradient-client absolute right-0 z-10 rotate-180"></div>
 
           <Marquee
             speed={50}
@@ -52,7 +52,7 @@ const OurClientele = () => {
             {clients.map((logo, index) => (
               <div
                 key={index}
-                className="mx-30 flex items-center justify-center"
+                className="mx-10 md:mx-30 flex items-center justify-center"
               >
                 <Image
                   src={logo}

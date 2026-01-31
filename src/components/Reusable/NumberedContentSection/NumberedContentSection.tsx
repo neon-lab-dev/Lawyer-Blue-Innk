@@ -11,7 +11,7 @@ const NumberedContentSection = ({heading, items} : {heading: string, items: any[
           {items?.map((item?) => (
             <div
               key={item?.id}
-              className="py-12 px-19.5 border-t border-neutral-20 min-w-230"
+              className="py-12 px-0 md:px-19.5 border-t border-neutral-20 max-w-230"
             >
               <div className="text-white flex items-center gap-6">
                 <h3 className="text-5xl font-medium leading-14 text-white">{item?.id}</h3>

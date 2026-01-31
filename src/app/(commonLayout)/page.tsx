@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      {/* <OurClientele />
+      <OurClientele />
       <OurServices />
       <WhyChooseBlueInkk />
       <FounderMessage />
       <CorePhilosophy />
-      <ContactUs /> */}
+      <ContactUs />
     </div>
   );
 }

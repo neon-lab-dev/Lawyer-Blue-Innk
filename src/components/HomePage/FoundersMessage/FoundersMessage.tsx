@@ -6,9 +6,9 @@ const FounderMessage = () => {
   return (
     <section className="bg-neutral-05 py-14 font-neue-montreal">
       <Container>
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-6">
           {/* Text Content */}
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <h3 className="title">Founder’s Message</h3>
             <p className="text-neutral-15 text-sm md:text-lg leading-relaxed mt-3 font-work-sans">
               At BlueInkk, we see intellectual property as the power to innovate
@@ -29,7 +29,7 @@ const FounderMessage = () => {
           <Image
             src={IMAGES.founder}
             alt="Founder"
-            className="w-1/2 h-125"
+            className="w-full lg:w-1/2 h-fit lg:h-125"
             priority
           />
         </div>

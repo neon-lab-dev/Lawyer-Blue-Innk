@@ -23,20 +23,19 @@ const ContactUs = () => {
   return (
     <Container>
       <div className="py-14">
-        
-        <div className="flex items-center justify-between">
-         <div className="w-1/2 space-y-8">
-           <Heading
-          heading="Contact Us"
-          description="We usually respond within 24 hours"
-        />
-        
-          {/* Form */}
-          <ContactUsForm />
-         </div>
+        <div className="flex flex-col md:flex-row gap-12 md:gap-10 lg:gap-0 items-center justify-between">
+          <div className="w-full md:w-1/2 space-y-8">
+            <Heading
+              heading="Contact Us"
+              description="We usually respond within 24 hours"
+            />
+
+            {/* Form */}
+            <ContactUsForm />
+          </div>
 
           {/* Contact info */}
-          <div className="space-y-6 w-1/3">
+          <div className="space-y-6 w-full md:w-1/3">
             <Image
               src={IMAGES.logo}
               alt="Lawyer Blue Innk"
@@ -44,8 +43,9 @@ const ContactUs = () => {
               height={84}
               className="size-21"
             />
-            <h3 className="text-neutral-15 text-2xl font-medium font-neue-montreal">
-              Address- G-49-50, SECOND FLOOR, OFFICE NO. 1, METRO STATION, near SECTOR 16, Block G, Noida Sector 3, Noida, Uttar Pradesh 201301
+            <h3 className="text-neutral-15 text-lg lg:text-2xl font-medium font-neue-montreal">
+              Address- G-49-50, SECOND FLOOR, OFFICE NO. 1, METRO STATION, near
+              SECTOR 16, Block G, Noida Sector 3, Noida, Uttar Pradesh 201301
             </h3>
 
             <div className="flex flex-col gap-3">
