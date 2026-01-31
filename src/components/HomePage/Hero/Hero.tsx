@@ -15,7 +15,6 @@ const Hero = () => {
               their rights with confidence.
             </p>
           </div>
-          {/* <Button label="Enquire Now" /> */}
 
           <p className="text-sm font-medium text-neutral-20">
             Confidential - Quick Response - No <br /> obligation
