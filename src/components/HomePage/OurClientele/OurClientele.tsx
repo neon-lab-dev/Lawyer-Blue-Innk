@@ -15,6 +15,13 @@ const OurClientele = () => {
     IMAGES.haldirams,
     IMAGES.wakefit,
     IMAGES.micromax,
+    IMAGES.ntpc,
+    IMAGES.steelbirdInternational,
+    IMAGES.ajayDevgnFilms,
+    IMAGES.anilSharmaProductions,
+    IMAGES.lotusHerbals,
+    IMAGES.milkBasket,
+    IMAGES.premanandJiMaharaj,
   ];
 
   return (
@@ -49,7 +56,7 @@ const OurClientele = () => {
             {clients.map((logo, index) => (
               <div
                 key={index}
-                className="mx-10 md:mx-30 flex items-center justify-center"
+                className="mx-10 md:mx-20 flex items-center justify-center"
               >
                 <Image
                   src={logo}
