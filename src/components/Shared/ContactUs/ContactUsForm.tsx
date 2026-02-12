@@ -53,9 +53,6 @@ const ContactUsForm = () => {
           required: "This field is required",
         })}
       />
-      <p className="text-sm text-neutral-10 font-medium font-work-sans text-center">
-        Your information is confidential and protected.
-      </p>
       <Button label="Submit" classNames="max-w-[402px] w-full mx-auto" />
     </form>
   );

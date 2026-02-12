@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const OurClientele = () => {
   const stats = [
-    { title: "Clients Helped", value: 40000 },
+    { title: "Clients Helped", value: "40,000" },
     { title: "Years Legal Experience", value: 15 },
-    { title: "Practice Areas", value: 100 },
+    { title: "Countries", value: 100 },
   ];
 
   const clients = [
@@ -18,10 +18,10 @@ const OurClientele = () => {
   ];
 
   return (
-    <section className="bg-neutral-25 py-14 md:py-18 font-neue-montreal">
+    <section className="bg-white py-14 md:py-18 font-neue-montreal">
       <Container>
         {/* Stats */}
-        <div className="flex flex-col md:flex-row gap-9 md:gap-0 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-9 md:gap-0 items-center justify-between max-w-[1000px] mx-auto">
           {stats.map((stat) => (
             <div
               key={stat.title}
@@ -39,9 +39,6 @@ const OurClientele = () => {
         <h1 className="title mb-12 text-center">Our Clientele</h1>
 
         {/* Marquee */}
-        <div className="relative">
-          <div className="w-10 md:w-37 h-24 bg-gradient-client absolute left-0 z-10"></div>
-          <div className="w-10 md:w-37 h-24 bg-gradient-client absolute right-0 z-10 rotate-180"></div>
 
           <Marquee
             speed={50}
@@ -62,7 +59,6 @@ const OurClientele = () => {
               </div>
             ))}
           </Marquee>
-        </div>
       </Container>
     </section>
   );

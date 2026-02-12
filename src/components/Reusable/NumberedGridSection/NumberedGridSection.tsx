@@ -4,16 +4,16 @@ import Heading from "../Heading/Heading";
 
 const NumberedGridSection = ({heading, description} : {heading: string, description?: string}) => {
   const practiceAreas = [
-    { id: "01", title: "Trademark" },
-    { id: "02", title: "Copyright" },
-    { id: "03", title: "Design" },
-    { id: "04", title: "Patent" },
-    { id: "05", title: "IP Enforcement & Anti Counterfeiting" },
-    { id: "06", title: "IP Valuation & Due Diligence" },
-    { id: "07", title: "Commercial Litigation" },
-    { id: "08", title: "Criminal Litigation" },
-    { id: "09", title: "Arbitration & Conciliation" },
-    { id: "10", title: "Contracts & Agreements" },
+    { id: "1", title: "Trademark" },
+    { id: "2", title: "Copyright" },
+    { id: "3", title: "Design" },
+    { id: "4", title: "Patent" },
+    { id: "5", title: "Contracts & Agreements" },
+    { id: "6", title: "IP Valuation & Due Diligence" },
+    { id: "7", title: "Commercial Litigation" },
+    { id: "8", title: "Criminal Litigation" },
+    { id: "9", title: "Arbitration & Conciliation" },
+    { id: "10", title: "IP Enforcement & Anti Counterfeiting" },
   ];
   return (
     <Container>
@@ -28,12 +28,9 @@ const NumberedGridSection = ({heading, description} : {heading: string, descript
             <div key={colIndex} className="flex flex-col gap-3 flex-1">
               <div
                   key={area.id}
-                  className="bg-gradient-service-card p-6 rounded-3xl"
+                  className="bg-gradient-service-card p-6 rounded-3xl "
                 >
-                  <h3 className="title">{area.id}</h3>
-                  <p className="text-2xl font-medium text-neutral-15 mt-3">
-                    {area.title}
-                  </p>
+                  <h3 className="text-2xl font-medium text-neutral-15 italic"> {area.title} </h3>
                 </div>
             </div>
           ))}

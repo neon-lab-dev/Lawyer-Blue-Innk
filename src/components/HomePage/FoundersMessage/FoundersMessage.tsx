@@ -6,7 +6,7 @@ const FounderMessage = () => {
   return (
     <section className="bg-neutral-05 py-14 font-neue-montreal">
       <Container>
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           {/* Text Content */}
           <div className="w-full lg:w-1/2">
             <h3 className="title">Founder’s Message</h3>
@@ -29,7 +29,7 @@ const FounderMessage = () => {
           <Image
             src={IMAGES.founder}
             alt="Founder"
-            className="w-full lg:w-1/2 h-fit lg:h-125"
+            className="w-full lg:w-125 object-cover"
             priority
           />
         </div>

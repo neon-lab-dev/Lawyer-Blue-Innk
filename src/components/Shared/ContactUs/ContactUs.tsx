@@ -39,16 +39,14 @@ const ContactUs = () => {
             <Image
               src={IMAGES.logo}
               alt="Lawyer Blue Innk"
-              width={84}
-              height={84}
-              className="size-21"
+              className="size-30 mx-auto"
             />
-            <h3 className="text-neutral-15 text-lg lg:text-2xl font-medium font-neue-montreal">
+            <h3 className="text-neutral-15 text-lg lg:text-2xl font-medium font-neue-montreal ml-5">
               Address- G-49-50, SECOND FLOOR, OFFICE NO. 1, METRO STATION, near
               SECTOR 16, Block G, Noida Sector 3, Noida, Uttar Pradesh 201301
             </h3>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 ml-5">
               {contactInfo.map((item, index) => (
                 <div
                   key={index}

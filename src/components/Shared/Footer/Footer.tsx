@@ -50,17 +50,17 @@ const Footer = () => {
       heading: "Contact Info",
       links: [
         {
-          label: "+91 93703 08788",
-          path: "tel:+919370308788",
+          label: "+91-9958000637",
+          path: "tel:+91-9958000637",
           icon: ICONS.phone,
         },
         {
-          label: "bluelnkk124@gmail.com",
-          path: "mailto:bluelnkk124@gmail.com",
+          label: "ipr@blueinkk.com",
+          path: "mailto:ipr@blueinkk.com",
           icon: ICONS.email,
         },
         {
-          label: "09:00 AM – 06:00 PM (Mon – Fri)",
+          label: "09:00 AM - 06:00 PM (Mon - Fri)",
           path: null,
           icon: ICONS.time,
         },
@@ -80,14 +80,12 @@ const Footer = () => {
                 <Image
                   src={IMAGES.logo}
                   alt="Lokplaaza"
-                  width={48}
-                  height={48}
-                  className="size-18 w-auto"
+                  className="size-30 w-auto"
                 />
               </Link>
 
               <p className="text-neutral-15 font-medium font-work-sans text-lg max-w-70 mb-6">
-                Trusted legal expertise for over two decades. Your success is
+                Trusted legal expertise for over 15+ years. Your success is
                 our commitment.
               </p>
             </div>

@@ -1,12 +1,12 @@
-import heroImage from "../assets/images/heroImage.png";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/logo.bmp";
 import founder from "../assets/images/founder.webp";
 import airArabia from "../assets/images/clients/air-arabia.webp";
 import haldirams from "../assets/images/clients/haldirams.webp";
 import micromax from "../assets/images/clients/micromax.webp";
 import wakefit from "../assets/images/clients/wakefit.webp";
-import dummyTeamMember from "../assets/images/dummy-team-member.png"; // Dummy image
-import awardDummy from "../assets/images/award-dummy.png"; // Dummy image
+import award1 from "../assets/images/award-1.webp";
+import award2 from "../assets/images/award-2.webp";
+import SukhveerSingh from "../assets/images/Sukhveer-Singh.webp";
 
 // ICons
 import rightArrow from "../assets/icons/right-arrow.svg";
@@ -18,15 +18,15 @@ import cross from "../assets/icons/cross.svg";
 import rightArrowBlack from "../assets/icons/right-arrow-black.svg";
 
 export const IMAGES = {
-  heroImage,
   logo,
   founder,
   airArabia,
   haldirams,
   micromax,
   wakefit,
-  dummyTeamMember, // Dummy image
-  awardDummy, // Dummy image
+  SukhveerSingh,
+  award1,
+  award2,
 };
 
 export const ICONS = {
@@ -36,5 +36,5 @@ export const ICONS = {
   time,
   hamburgerMenu,
   cross,
-  rightArrowBlack
+  rightArrowBlack,
 };

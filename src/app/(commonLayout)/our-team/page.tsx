@@ -14,9 +14,9 @@ const OurTeam = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-12 lg:mt-26.5">
           {[1, 2, 3, 4, 5, 6]?.map((_, index) => (
-            <div key={index} className="max-w-[288px] relative">
-              <Image src={IMAGES.dummyTeamMember} alt="Founder" />
-              <div className="bg-secondary-05 p-6 absolute bottom-0">
+            <div key={index} className="max-w-[288px]">
+              <Image src={IMAGES.SukhveerSingh} alt="Founder" className="h-75 object-cover" />
+              <div className="bg-secondary-05 p-6">
                 <h3 className="text-2xl text-neutral-15 font-medium font-neue-montreal">
                   Sarah Johnson
                 </h3>
