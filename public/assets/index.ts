@@ -3,7 +3,7 @@ import founder from "../assets/images/founder.webp";
 import airArabia from "../assets/images/clients/air-arabia.webp";
 import ajayDevgnFilms from "../assets/images/clients/ajay-devgn-films.webp";
 import anilSharmaProductions from "../assets/images/clients/anil-sharma-productions.webp";
-import haldirams from "../assets/images/clients/haldiram's.webp";
+import haldirams from "../assets/images/clients/haldiram.webp";
 import lotusHerbals from "../assets/images/clients/lotus-herbals.webp";
 import micromax from "../assets/images/clients/micromax.webp";
 import milkBasket from "../assets/images/clients/milk-basket.webp";
